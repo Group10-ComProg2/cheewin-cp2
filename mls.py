@@ -24,3 +24,14 @@ def write_initial_data():
 
 initialize_library()
 write_initial_data()
+
+def append_data():
+    f = open("MLS.txt", "a")
+
+    f.write("ID: 004 | Book: Database Systems\n")
+    f.write("ID: 005 | Book: Web Development\n")
+    f.write("ID: 006 | Book: Artificial Intelligence\n")
+
+    f.close()
+
+    print("Data appended successfully.")
