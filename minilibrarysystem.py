@@ -4,14 +4,11 @@ def initialize_library():
         f.close()
         print("Library file created successfully!")
 
-
     except FileExistsError:
         print("Library file already exists!")
 
-
 def write_initial_data():
     f = open("Mini Library.txt", "w")
-
 
     f.write("Welcome to the Mini Library System!\n")
     f.write("Book No. 001 | Title: Learn Computer Programing\n")
@@ -19,12 +16,10 @@ def write_initial_data():
 
     f.close()
 
-
     print("Initial data written successfully!\n")
 
 initialize_library()
 write_initial_data()
-
 
 def append_data():
     try:
