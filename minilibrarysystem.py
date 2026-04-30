@@ -48,3 +48,22 @@ def append_data():
         print("Library file not found! Please initialize the library first.")
         
 append_data()
+
+def read_library():
+    try:
+        f = open("MLS.txt", "r")
+
+        print("\n===== LIBRARY RECORDS =====")
+
+        lines = f.readlines()
+
+        for line in lines:
+            print(line.strip())
+
+        print("\nTotal number of lines:", len(lines))
+
+        f.close()
+
+    except FileNotFoundError:
+        print("Library file not found!")
+
